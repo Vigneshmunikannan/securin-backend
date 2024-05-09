@@ -4,7 +4,7 @@ const {
     list,getSingleData
 } = require("../controllers/controllers")
 
-router.route('/list').get(list)
-router.route('/getsingledata/:cveId').get(getSingleData)
+router.route('/cves/list').get(list)
+router.route('/cves/:cveId').get(getSingleData)
 
 module.exports = router
