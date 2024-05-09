@@ -40,8 +40,6 @@ const list = async (req, res) => {
     res.status(500).json({ error: 'Failed to fetch CVEs' });
   }
 };
-
-
   const getSingleData = asynchandler(async (req, res) => {
     try {
       const cveId = req.params.cveId; // Assuming the CVE ID is passed as a parameter in the request
